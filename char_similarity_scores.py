@@ -1,6 +1,3 @@
-from similarity import image_hash
-
-
 # This score is calculated using image_hash
 # Here distance score shows difference in two characters shapes.
 # score (0, ..., 1)
