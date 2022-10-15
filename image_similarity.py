@@ -9,21 +9,6 @@ from PIL import Image
 from collections import Counter
 import numpy as np
 
-def get_score_distance(im1, im2):
-    # This is paid API but first few calls are free.
-    api_key1 = "quickstart-QUdJIGlzIGNvbWluZy4uLi4K"
-    # api_key2 = "da342130-04f5-4571-abaa-426996255b03"
-    r = requests.post(
-        "https://api.deepai.org/api/image-similarity",
-        files={
-            'image1': open(im1, 'rb'),
-            'image2': open(im2, 'rb'),
-        },
-        
-        headers={'api-key': api_key2}
-    )
-    return r
-
 def generate_distance_api(letters):
     done = []
     scores = []
