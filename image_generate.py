@@ -34,4 +34,5 @@ if __name__ == '__main__':
         path = "images/image_" + char + "_.png"
         img.save(path)
         print("saved image as ", path)
+    print("changes.")
         
